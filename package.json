@@ -1,7 +1,7 @@
 {
-  "name": "english school",
+  "name": "Liga-A-start-template",
   "version": "1.0.0",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Сборка для English school",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.7.6",
