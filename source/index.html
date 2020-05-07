@@ -11,16 +11,27 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite_auto.svg">
+  </div>
   <header class="page-header">
-    <div class="site-navigation">
+    <div class="page-header__wrapper site-navigation">
       <button type="button" id="button-open" class="page-header__toggle">
         <span class="visually-hidden">Открыть меню</span>
+        <svg width="24" height="12">
+          <use xlink:href="#icon-burger"></use>
+        </svg>
       </button>
       <button type="button" id="button-close" class="page-header__toggle header__toggle--close">
         <span class="visually-hidden">Закрыть меню</span>
+        <svg width="18" height="18">
+          <use xlink:href="#icon-cross"></use>
+        </svg>
       </button>
       <a class="site-navigation__logo">
-        <img src="#" alt="Логотип школы Clever baby">
+        <svg width="143" height="23">
+          <use xlink:href="#icon-logo"></use>
+        </svg>
       </a>
       <nav class="site-navigation__nav main-nav">
         <ul class="main-nav__list">
@@ -31,129 +42,177 @@
           <li class="main-nav__item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <a href="tel:+74959834719" class="site-navigation__tel">+ 7 (495) 983-47-19</a>
+      <a href="tel:+74959834719" class="site-navigation__tel"><svg width="15" height="15"><use xlink:href="#icon-tel"></use></svg>+ 7 (495) 983-47-19</a>
     </div>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Школа английского языка для детей Clever Baby</h1>
     <section class="main-info">
-      <h2>Английский язык</h2>
-      <b>для детей от 2 до 7 лет</b>
-      <p>Гармоничное развитие детей и обучение через полное погружение в языковую среду</p>
-      <a class="button button--yellow">Записаться</a>
+      <div class="main-info__wrapper">
+        <h2>Английский язык</h2>
+        <b>для детей от 2 до 7 лет</b>
+        <p>Гармоничное развитие детей и обучение через полное погружение в языковую среду</p>
+        <a class="button button--yellow">Записаться</a>
+      </div>
     </section>
 
     <section class="education">
-      <h2>Как проходит обучение</h2>
-      <ul class="education__top-list top-list">
-        <li class="top-list__item">
-          <h3>Играя — обучаем, обучая — развиваем</h3>
-          <p>
-            Мы взяли все самое лучшее из традиционных и современных методик обучения и развития детей.
-            Обучение английскому языку происходит легко и интересно, ведь малыши не зубрят материал по учебникам,
-            а познают его через игру, сказки, книги и музыку.
-            Наша методика также включает в себя обучение по программе Cambridge. Благодаря этому, наши ученики без труда
-            сдают международные и государственные экзамены.
-          </p>
-        </li>
-        <li class="top-list__item">
-          <h3>Посмотрите, как проходят наши занятия</h3>
-          <img src="#" alt="Видео о нашем обучении">
-          <button class="video-button"><span class="visually-hidden">Посмотреть видео</span></button>
-        </li>
-      </ul>
-      <ul class="education__bottom-list bottom-list">
-        <li class="bottom-list__item">
-          <h3>Развитие 10 видов интеллекта</h3>
-          <p>
-            Учимся общаться, развивать эмоциональный, творческий интеллект и многое другое
-          </p>
-        </li>
-        <li class="bottom-list__item">
-          <h3>Языковое погружение</h3>
-          <p>
-            Занятия проходят полностью на английском языке, независимо от типа задания
-          </p>
-        </li>
-        <li class="bottom-list__item">
-          <h3>Педагоги — носители языка</h3>
-          <p>
-            Занятия ведут преподаватели из США, Великобритании и Канады, для которых английский язык является родным
-          </p>
-        </li>
-        <li class="bottom-list__item">
-          <h3>Небольшие группы</h3>
-          <p>
-            Дети занимаются в группах до 5 человек, что позволяет применять индивидуальный подход к каждому
-          </p>
-        </li>
-      </ul>
+      <div class="education__wrapper">
+        <h2>Как проходит обучение</h2>
+        <ul class="education__top-list top-list">
+          <li class="top-list__item">
+            <h3>Играя — обучаем, обучая — развиваем</h3>
+            <p>
+              Мы взяли все самое лучшее из традиционных и современных методик обучения и развития детей.
+              Обучение английскому языку происходит легко и интересно, ведь малыши не зубрят материал по учебникам,
+              а познают его через игру, сказки, книги и музыку.
+              Наша методика также включает в себя обучение по программе Cambridge. Благодаря этому, наши ученики без
+              труда
+              сдают международные и государственные экзамены.
+            </p>
+          </li>
+          <li class="top-list__item">
+            <h3>Посмотрите, как проходят наши занятия</h3>
+            <img src="#" alt="Видео о нашем обучении">
+            <button class="video-button"><span class="visually-hidden">Посмотреть видео</span></button>
+          </li>
+        </ul>
+        <ul class="education__bottom-list bottom-list">
+          <li class="bottom-list__item">
+            <h3>Развитие 10 видов интеллекта</h3>
+            <p>
+              Учимся общаться, развивать эмоциональный, творческий интеллект и многое другое
+            </p>
+          </li>
+          <li class="bottom-list__item">
+            <h3>Языковое погружение</h3>
+            <p>
+              Занятия проходят полностью на английском языке, независимо от типа задания
+            </p>
+          </li>
+          <li class="bottom-list__item">
+            <h3>Педагоги — носители языка</h3>
+            <p>
+              Занятия ведут преподаватели из США, Великобритании и Канады, для которых английский язык является родным
+            </p>
+          </li>
+          <li class="bottom-list__item">
+            <h3>Небольшие группы</h3>
+            <p>
+              Дети занимаются в группах до 5 человек, что позволяет применять индивидуальный подход к каждому
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="groups">
-      <h2>Наши группы</h2>
-      <p>
-        В группах занимается до 5 человек. Все дети в группе примерно одного возраста и уровня знаний.
-      </p>
-      <ul class="groups__list">
-        <li class="groups__list-item">
-          <h3>Бэбики-1</h3>
-          <p>1 раз в неделю</p>
-          <p>1,5 часа занятие</p>
-          <p><b>2500 ₽</b> в месяц</p>
-          <button class="button button--blue">Записаться</button>
-        </li>
-        <li class="groups__list-item">
-          <h3>Бэбики-2</h3>
-          <p>2 раза в неделю</p>
-          <p>1,5 часа занятие</p>
-          <p><b>4000 ₽</b> в месяц</p>
-          <button class="button button--yellow">Записаться</button>
-        </li>
-        <li class="groups__list-item">
-          <h3>Бэбики-3</h3>
-          <p>3 раза в неделю</p>
-          <p>1 час занятие</p>
-          <p><b>4000 ₽</b> в месяц</p>
-          <button class="button button--pink">Записаться</button>
-        </li>
-      </ul>
+      <div class="groups__wrapper">
+        <h2>Наши группы</h2>
+        <p>
+          В группах занимается до 5 человек. Все дети в группе примерно одного возраста и уровня знаний.
+        </p>
+        <ul class="groups__list">
+          <li class="groups__list-item">
+            <h3>Бэбики-1</h3>
+            <p>1 раз в неделю</p>
+            <p>1,5 часа занятие</p>
+            <p><b>2500 </b><svg width="11" height="14"><use xlink:href="#icon-rub"></use></svg> в месяц</p>
+            <button class="button button--blue">Записаться</button>
+          </li>
+          <li class="groups__list-item">
+            <h3>Бэбики-2</h3>
+            <p>2 раза в неделю</p>
+            <p>1,5 часа занятие</p>
+            <p><b>4000 </b><svg width="11" height="14"><use xlink:href="#icon-rub"></use></svg>
+              в месяц</p>
+            <button class="button button--yellow">Записаться</button>
+          </li>
+          <li class="groups__list-item">
+            <h3>Бэбики-3</h3>
+            <p>3 раза в неделю</p>
+            <p>1 час занятие</p>
+            <p><b>4000 </b><svg width="11" height="14"><use xlink:href="#icon-rub"></use></svg> в месяц</p>
+            <button class="button button--pink">Записаться</button>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="teachers">
-      <h2>Наши преподаватели</h2>
-      <p>Все наши преподаватели — носители английского языка и имеют необходимое образование и опыт работы с детьми</p>
-      <ul class="teachers__list">
-        <li class="teachers__list-item">
-          <img src="#" alt="">
-          <b>Kate Smith</b>
-          <p>США</p>
-        </li>
-        <li class="teachers__list-item">
-          <img src="#" alt="">
-          <b>Samuel King</b>
-          <p>США</p>
-        </li>
-        <li class="teachers__list-item">
-          <img src="#" alt="">
-          <b>Nikole Young</b>
-          <p>Канада</p>
-        </li>
-        <li class="teachers__list-item">
-          <img src="#" alt="">
-          <b>Karoline Bush</b>
-          <p>Канада</p>
-        </li>
-      </ul>
-      <button><span class="visually-hidden">Показать предыдущих преподавателей</span></button>
-      <button><span class="visually-hidden">Показать следующих преподавателей</span></button>
+      <div class="teachers__wrapper">
+        <h2>Наши преподаватели</h2>
+        <p>Все наши преподаватели — носители английского языка и имеют необходимое образование и опыт работы с детьми
+        </p>
+        <ul class="teachers__list">
+          <li class="teachers__list-item">
+            <img src="img/teacher-1@1px.jpg" alt="">
+            <b>Kate Smith</b>
+            <p>США</p>
+          </li>
+          <li class="teachers__list-item">
+            <img src="img/teacher-2@1x.jpg" alt="">
+            <b>Samuel King</b>
+            <p>США</p>
+          </li>
+          <li class="teachers__list-item">
+            <img src="img/teacher-3@1x.jpg" alt="">
+            <b>Nikole Young</b>
+            <p>Канада</p>
+          </li>
+          <li class="teachers__list-item">
+            <img src="img/teacher-4.jpg" alt="">
+            <b>Karoline Bush</b>
+            <p>Канада</p>
+          </li>
+
+          <!-- Повторы для демонстрации работы слайдера -->
+          <li class="teachers__list-item teachers__list-item--hide">
+            <img src="img/teacher-2@1x.jpg" alt="">
+            <b>Samuel King</b>
+            <p>США</p>
+          </li>
+          <li class="teachers__list-item">
+            <img src="img/teacher-3@1x.jpg" alt="">
+            <b>Nikole Young</b>
+            <p>Канада</p>
+          </li>
+          <li class="teachers__list-item">
+            <img src="img/teacher-4.jpg" alt="">
+            <b>Karoline Bush</b>
+            <p>Канада</p>
+          </li>
+          <li class="teachers__list-item">
+            <img src="img/teacher-1@1px.jpg" alt="">
+            <b>Kate Smith</b>
+            <p>США</p>
+          </li>
+          <li class="teachers__list-item">
+            <img src="img/teacher-3@1x.jpg" alt="">
+            <b>Nikole Young</b>
+            <p>Канада</p>
+          </li>
+        </ul>
+        <button><span class="visually-hidden">Показать предыдущих преподавателей</span>
+          <svg width="15" height="8">
+            <use xlink:href="#icon-left"></use>
+          </svg>
+        </button>
+        <button><span class="visually-hidden">Показать следующих преподавателей</span>
+          <svg width="15" height="8">
+            <use xlink:href="#icon-right"></use>
+          </svg>
+        </button>
+      </div>
     </section>
 
     <section class="booking">
-      <h2>Запишитесь на бесплатное пробное занятие</h2>
-      <p>Приходите к нам в гости и мы познакомим вас с педагогами, расскажем о школе и ответим на все ваши вопросы</p>
-      <button class="button button--yellow">Записаться</button>
+      <div class="booking__wrapper">
+        <h2>Запишитесь на бесплатное пробное занятие</h2>
+        <p>Приходите к нам в гости и мы познакомим вас с педагогами, расскажем о школе и ответим на все ваши вопросы</p>
+        <button class="button button--yellow">Записаться</button>
+      </div>
     </section>
 
     <section class="contacts">
@@ -180,13 +239,25 @@
           </li>
           <li class="contacts__list-item">
             <h3>Мы в соцсетях:</h3>
-            <ul class="contacts-list">
-              <li class="contacts-list__item"><a href="#"><span class="visually-hidden">Страница Clever baby в
-                    Фейсбук</span></a></li>
-              <li class="contacts-list__item"><a href="#"><span class="visually-hidden">Страница Clever baby во
-                    Вконтакте</span></a></li>
-              <li class="contacts-list__item"><a href="#"><span class="visually-hidden">Страница Clever baby в
-                    Инстаграм</span></a></li>
+            <ul class="social-list">
+              <li class="social-list__item"><a href="#"><span class="visually-hidden">Страница Clever baby в
+                    Фейсбук</span>
+                  <svg width="6" height="12">
+                    <use xlink:href="#icon-fb"></use>
+                  </svg>
+                  </a></li>
+              <li class="social-list__item"><a href="#"><span class="visually-hidden">Страница Clever baby во
+                    Вконтакте</span>
+                  <svg width="14" height="8">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg>
+                  </a></li>
+              <li class="social-list__item"><a href="#"><span class="visually-hidden">Страница Clever baby в
+                    Инстаграм</span>
+                  <svg widht="12" height="12">
+                    <use xlink:href="#icon-inst"></use>
+                  </svg>
+                  </a></li>
             </ul>
           </li>
         </ul>
@@ -197,11 +268,11 @@
   </main>
 
   <footer class="page-footer">
-    <section class="footer">
+    <div class="page-footer__wrapper">
       <h2 class="visually-hidden">Права и политика конфиденциальности</h2>
       <p><a href="#">CleverBaby 2020 Все права защищены</a></p>
       <p><a href="#">Политика конфиденциальности</a></p>
-    </section>
+    </div>
   </footer>
 
 </body>

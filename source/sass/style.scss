@@ -1,3 +1,18 @@
-h1 {
-  color: red;
-}
+@import "utils/normalize";
+@import "utils/fonts";
+@import "utils/variables";
+@import "utils/mixins";
+@import "blocks/visually-hidden";
+@import "global";
+@import "blocks/button";
+@import "blocks/page-header";
+@import "blocks/site-navigation";
+@import "blocks/main-info";
+@import "blocks/education";
+@import "blocks/groups";
+@import "blocks/teachers";
+@import "blocks/booking";
+@import "blocks/contacts";
+@import "blocks/social-list";
+@import "blocks/page-footer";
+@import "blocks/main-nav";

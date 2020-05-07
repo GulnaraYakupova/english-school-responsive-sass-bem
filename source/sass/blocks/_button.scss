@@ -1,0 +1,23 @@
+.button {
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 15px 35px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.button--yellow {
+  background-color: $accent-color-1;
+}
+
+.button--blue {
+  background-color: $accent-color-2;
+}
+
+.button--pink {
+  background-color: $accent-color-3;
+}

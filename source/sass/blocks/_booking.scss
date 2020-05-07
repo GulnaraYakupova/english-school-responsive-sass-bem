@@ -1,0 +1,38 @@
+.booking {
+  max-width: $desktop-full-width;
+}
+
+.booking__wrapper {
+  padding-left: 32%;
+  padding-right: 32%;
+}
+
+.booking h2 {
+  padding: 0;
+  margin: 0;
+  font-family: $second-font;
+  font-size: $font-size-desktop-h2;
+  font-weight: 500;
+}
+
+.booking p {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: $tablet-full-width) {
+  .booking__wrapper {
+    padding-left: 18.35%;
+    padding-right: 18.35%;
+  }
+
+  .booking p {
+    font-size: $font-size-tablet-s;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .booking h2 {
+    font-size: $font-size-mobile-h2;
+  }
+}

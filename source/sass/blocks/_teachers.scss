@@ -1,0 +1,58 @@
+.teachers {
+  max-width: $desktop-full-width;
+}
+
+.teachers__wrapper {
+  padding-left: 14.5%;
+  padding-right: 14.5%;
+}
+
+.teachers h2 {
+  margin: 0;
+  padding: 0;
+  font-family: $second-font;
+  font-size: $font-size-desktop-h2;
+  font-weight: 500;
+}
+
+.teachers p {
+  margin: 0;
+  padding: 0;
+}
+
+.teachers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.teachers__list b {
+  font-weight: 500;
+  font-size: $font-size-desktop-h3;
+}
+
+@media (max-width: $tablet-full-width) {
+  .teachers__wrapper {
+    padding-left: 5.86%;
+    padding-right: 5.86%;
+  }
+
+  .teachers__list b {
+    font-size: $font-size-tablet-m;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .teachers__wrapper {
+    padding-left: 4.69%;
+    padding-right: 4.69%;
+  }
+
+  .teachers h2 {
+    font-size: $font-size-mobile-h2;
+  }
+
+  .teachers__list b {
+    font-size: $font-size-mobile-m;
+  }
+}

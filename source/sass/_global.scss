@@ -1,0 +1,27 @@
+html {
+  background-color: $main-background-color;
+  font-family: $main-font;
+  color: $main-color;
+  font-size: $font-size-desktop-s;
+  line-height: $line-height-s;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: $mobile-full-width) {
+  html {
+    font-size: $font-size-mobile-s;
+  }
+}

@@ -1,0 +1,27 @@
+.main-nav {
+  flex-basis: 802px;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.main-nav__item {
+  margin-right: 22px;
+}
+
+@media (max-width: $tablet-full-width) {
+  .main-nav__list {
+    font-weight: 500;
+    font-size: $font-size-tablet-l;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .main-nav__list {
+    font-size: $font-size-tablet-m;
+  }
+}

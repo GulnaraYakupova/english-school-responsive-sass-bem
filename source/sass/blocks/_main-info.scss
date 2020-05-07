@@ -1,0 +1,59 @@
+.main-info {
+  max-width: $desktop-full-width;
+  background-image: url("../img/main-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 127px;
+  padding-bottom: 171px;
+}
+
+.main-info__wrapper {
+  padding-left: 14.5%;
+  padding-right: 14.5%;
+}
+
+.main-info h2 {
+  padding: 0;
+  margin: 0;
+  font-family: $second-font;
+  font-size: $font-size-desktop-h1;
+  font-weight: 500;
+}
+
+.main-info b {
+  display: block;
+  margin-bottom: 22px;
+  font-family: $second-font;
+  font-size: $font-size-desktop-m;
+  font-weight: 500;
+}
+
+.main-info p {
+  margin: 0;
+  padding: 0;
+  width: 41%;
+  line-height: 1.36;
+  margin-bottom: 40px;
+}
+
+@media (max-width: $tablet-full-width) {
+  .main-info__wrapper {
+    padding-left: 5.86%;
+    padding-right: 5.86%;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .main-info__wrapper {
+    padding-left: 7.8%;
+    padding-right: 7.8%;
+  }
+
+  .main-info h2 {
+    font-size: $font-size-mobile-h1;
+  }
+
+  .main-info b {
+    font-size: $font-size-mobile-m;
+  }
+}

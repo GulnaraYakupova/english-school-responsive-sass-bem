@@ -1,0 +1,25 @@
+.site-navigation {
+  display: flex;
+}
+
+.site-navigation__logo {
+  margin-right: 4.9%;
+  margin-top: -3px;
+}
+
+.site-navigation__tel {
+  font-size: $font-size-desktop-m;
+  min-width: 191px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: -2px;
+}
+
+@media (max-width: $tablet-full-width) {
+  .site-navigation__tel {
+    font-weight: 500;
+    font-size: $font-size-tablet-m;
+  }
+}
