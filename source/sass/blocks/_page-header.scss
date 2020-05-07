@@ -1,6 +1,7 @@
 .page-header {
   max-width: $desktop-full-width;
-  padding-top: 43px;
+  margin: 0 auto;
+  padding-top: 40px;
   padding-bottom: 36px;
 }
 
@@ -11,23 +12,48 @@
 .page-header__wrapper {
   padding-left: 7.17%;
   padding-right: 7.47%;
-  display: flex;
 }
 
 .page-header__toggle {
   display: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 18px;
 }
 
 @media (max-width: $tablet-full-width) {
+  .page-header {
+    padding-top: 32px;
+    padding-bottom: 26px;
+  }
+
   .page-header__wrapper {
-    padding-left: 5.86%;
-    padding-right: 5.86%;
+    padding-left: 5.7%;
+    padding-right: 6.3%;
+  }
+
+  .page-header__top {
+    display: flex;
+  }
+
+  .page-header__toggle {
+    display: block;
+  }
+
+  .page-header__toggle--close {
+    display: none;
   }
 }
 
 @media (max-width: $mobile-full-width) {
+  .page-header {
+    padding-top: 31px;
+  }
+
   .page-header__wrapper {
-    padding-left: 4.69%;
+    padding-left: 4.4%;
     padding-right: 4.69%;
   }
 }

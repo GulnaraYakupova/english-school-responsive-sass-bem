@@ -21,3 +21,9 @@
 .button--pink {
   background-color: $accent-color-3;
 }
+
+@media (max-width: $mobile-full-width) {
+  .button {
+    padding: 12px 23px;
+  }
+}

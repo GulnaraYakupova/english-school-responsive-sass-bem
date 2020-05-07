@@ -1,5 +1,7 @@
 .main-nav {
-  flex-basis: 802px;
+  flex-basis: 83%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-nav__list {
@@ -7,6 +9,7 @@
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-nav__item {
@@ -14,9 +17,22 @@
 }
 
 @media (max-width: $tablet-full-width) {
+  .main-nav {
+    flex-basis: auto;
+  }
+
   .main-nav__list {
     font-weight: 500;
     font-size: $font-size-tablet-l;
+    flex-direction: column;
+  }
+
+  .main-nav__list--closed {
+    display: none;
+  }
+
+  .main-nav__list--opened {
+    display: block;
   }
 }
 

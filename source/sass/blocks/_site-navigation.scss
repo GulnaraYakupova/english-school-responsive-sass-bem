@@ -1,10 +1,12 @@
 .site-navigation {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.site-navigation__logo {
-  margin-right: 4.9%;
-  margin-top: -3px;
+.site-navigation__logo svg {
+  width: 143px;
+  height: 23px;
 }
 
 .site-navigation__tel {
@@ -21,5 +23,30 @@
   .site-navigation__tel {
     font-weight: 500;
     font-size: $font-size-tablet-m;
+  }
+
+  .site-navigation__logo {
+    margin-left: 16%;
+    margin-top: -2px;
+  }
+
+  .site-navigation__logo svg {
+    width: 132px;
+    height: 21px;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .site-navigation__logo {
+    margin-left: 9.3%;
+  }
+
+  .site-navigation__logo svg {
+    width: 117px;
+    height: 18px;
+  }
+
+  .site-navigation__tel--closed {
+    display: none;
   }
 }
