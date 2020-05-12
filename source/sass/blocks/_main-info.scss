@@ -1,12 +1,14 @@
 .main-info {
   max-width: $desktop-full-width;
   margin: 0 auto;
-  background-image: url("../img/main-bg-desktop.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("../img/car-icon.svg"),
+    url("../../img/cloud-icon.svg"),
+    url("../img/main-bg-desktop.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 5% 9%, 93.5% 14.5%, 0 0;
   padding-top: 127px;
-  padding-bottom: 171px;
-  background-size: cover;
+  padding-bottom: 161px;
+  background-size: 106px 84px, 91px 62px, cover;
 }
 
 .main-info__wrapper {
@@ -42,7 +44,10 @@
   .main-info {
     padding-top: 83px;
     padding-bottom: 134px;
-    background-image: url("../img/main-bg-tablet.png");
+    background-image: url("../img/car-icon.svg"),
+      url("../img/main-bg-tablet.png");
+    background-size: 58px 46px, cover;
+    background-position: 1.5% 7.5%, 0 0;
   }
 
   .main-info__wrapper {

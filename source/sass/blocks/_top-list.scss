@@ -1,0 +1,36 @@
+.top-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 112px;
+}
+
+.top-list__item {
+  width: 48.5%;
+}
+
+.top-list__item p {
+  width: 87%;
+  margin-bottom: 12px;
+}
+
+@media (max-width: $tablet-full-width) {
+  .top-list {
+    margin-bottom: 96px;
+  }
+
+  .top-list__item p {
+    width: 95%;
+  }
+
+  .top-list__item:nth-child(2n) {
+    width: 52.5%;
+  }
+
+  .top-list__item:nth-child(2n-1) {
+    width: 45%;
+  }
+
+  .top-list h3 {
+    width: 75%;
+  }
+}
