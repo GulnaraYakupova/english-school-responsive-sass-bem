@@ -1,10 +1,26 @@
 .groups {
   max-width: $desktop-full-width;
+  padding-top: 176px;
+  padding-bottom: 184px;
+  background-image: url("../img/price-bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .groups__wrapper {
   padding-left: 14.5%;
   padding-right: 14.5%;
+}
+
+.groups__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 51px;
+}
+
+.groups__top p {
+  width: 30.7%;
 }
 
 .groups h2 {
@@ -20,17 +36,56 @@
   padding: 0;
   font-size: $font-size-desktop-h3;
   font-weight: 500;
+  margin-bottom: 29px;
 }
 
 .groups p {
   margin: 0;
+  margin-top: 2px;
   padding: 0;
+  line-height: 1.45;
 }
 
 .groups__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.groups__list-item {
+  width: 30%;
+  text-align: center;
+  border: 3px solid $accent-color-1;
+  padding-top: 43px;
+  border-radius: 13px;
+}
+
+.groups__list p {
+  margin-bottom: 7px;
+}
+
+.groups__button {
+  margin-top: 26px;
+  margin-bottom: 49px;
+}
+
+.groups b {
+  font-weight: 500;
+  font-size: $font-size-desktop-h3;
+}
+
+.groups__list-item--first {
+  border-color: $accent-color-2;
+}
+
+.groups__list-item--second {
+  border-color: $accent-color-1;
+}
+
+.groups__list-item--third {
+  border-color: $accent-color-3;
 }
 
 @media (max-width: $tablet-full-width) {
