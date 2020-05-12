@@ -151,9 +151,11 @@
 
     <section class="teachers">
       <div class="teachers__wrapper">
-        <h2>Наши преподаватели</h2>
-        <p>Все наши преподаватели — носители английского языка и имеют необходимое образование и опыт работы с детьми
-        </p>
+        <div class="teachers__top">
+          <h2>Наши преподаватели</h2>
+          <p>Все наши преподаватели — носители английского языка и имеют необходимое образование и опыт работы с детьми
+          </p>
+        </div>
         <ul class="teachers__list">
           <li class="teachers__list-item">
             <img src="img/teacher-1@1px.jpg" alt="">
@@ -182,37 +184,39 @@
             <b>Samuel King</b>
             <p>США</p>
           </li>
-          <li class="teachers__list-item">
+          <li class="teachers__list-item  teachers__list-item--hide">
             <img src="img/teacher-3@1x.jpg" alt="">
             <b>Nikole Young</b>
             <p>Канада</p>
           </li>
-          <li class="teachers__list-item">
+          <li class="teachers__list-item  teachers__list-item--hide">
             <img src="img/teacher-4.jpg" alt="">
             <b>Karoline Bush</b>
             <p>Канада</p>
           </li>
-          <li class="teachers__list-item">
+          <li class="teachers__list-item  teachers__list-item--hide">
             <img src="img/teacher-1@1px.jpg" alt="">
             <b>Kate Smith</b>
             <p>США</p>
           </li>
-          <li class="teachers__list-item">
+          <li class="teachers__list-item teachers__list-item--hide ">
             <img src="img/teacher-3@1x.jpg" alt="">
             <b>Nikole Young</b>
             <p>Канада</p>
           </li>
         </ul>
-        <button><span class="visually-hidden">Показать предыдущих преподавателей</span>
-          <svg width="15" height="8">
-            <use xlink:href="#icon-left"></use>
-          </svg>
-        </button>
-        <button><span class="visually-hidden">Показать следующих преподавателей</span>
-          <svg width="15" height="8">
-            <use xlink:href="#icon-right"></use>
-          </svg>
-        </button>
+        <div class="teachers__buttons">
+          <button><span class="visually-hidden">Показать предыдущих преподавателей</span>
+            <svg width="15" height="8">
+              <use xlink:href="#icon-left"></use>
+            </svg>
+          </button>
+          <button><span class="visually-hidden">Показать следующих преподавателей</span>
+            <svg width="15" height="8">
+              <use xlink:href="#icon-right"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -220,7 +224,7 @@
       <div class="booking__wrapper">
         <h2>Запишитесь на бесплатное пробное занятие</h2>
         <p>Приходите к нам в гости и мы познакомим вас с педагогами, расскажем о школе и ответим на все ваши вопросы</p>
-        <button class="button button--yellow">Записаться</button>
+        <button class="button booking__button button--yellow">Записаться</button>
       </div>
     </section>
 

@@ -1,5 +1,13 @@
 .booking {
   max-width: $desktop-full-width;
+  margin: 0 auto;
+  padding-top: 93px;
+  text-align: center;
+  background-image: url("../img/rainbow-icon.svg"),
+    url("../img/boy-icon.svg"),
+    url("../img/booking-bd-desktop.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 12.2% 30.6%, 80.1% 47%, 0 0;
 }
 
 .booking__wrapper {
@@ -13,11 +21,19 @@
   font-family: $second-font;
   font-size: $font-size-desktop-h2;
   font-weight: 500;
+  line-height: $line-height-sm;
+  margin-bottom: 17px;
 }
 
 .booking p {
   margin: 0;
-  padding: 0;
+  padding: 0 52px;
+  line-height: $line-height-mm;
+  margin-bottom: 35px;
+}
+
+.booking__button {
+  margin-bottom: 101px;
 }
 
 @media (max-width: $tablet-full-width) {
