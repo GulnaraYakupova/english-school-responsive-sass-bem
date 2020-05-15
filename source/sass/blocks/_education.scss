@@ -1,5 +1,4 @@
 .education {
-  max-width: $desktop-full-width;
   margin: 0 auto;
   padding-top: 123px;
   background-image: url("../img/girl-laughting.png"),
@@ -67,6 +66,7 @@
       url("../img/rocket-icon.svg");
     background-position: 53.7% 84.7%, 93% 4.7%;
     background-size: auto, 101px 50px;
+    margin-bottom: 47px;
   }
 
   .education__wrapper {

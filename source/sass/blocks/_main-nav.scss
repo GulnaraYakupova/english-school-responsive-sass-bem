@@ -19,12 +19,18 @@
 @media (max-width: $tablet-full-width) {
   .main-nav {
     flex-basis: auto;
+    margin-bottom: 10px;
   }
 
   .main-nav__list {
     font-weight: 500;
     font-size: $font-size-tablet-l;
     flex-direction: column;
+    display: none;
+  }
+
+  .main-nav__item {
+    margin-bottom: 20px;
   }
 
   .main-nav__list--closed {

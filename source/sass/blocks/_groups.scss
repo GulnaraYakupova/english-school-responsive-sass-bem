@@ -1,12 +1,12 @@
 .groups {
-  max-width: $desktop-full-width;
   margin: 0 auto;
   padding-top: 176px;
   padding-bottom: 184px;
   background-image: url("../img/star-icon.svg"),
-    url("../img/price-bg-desktop.svg");
+    url("../img/groups-desktop-bg.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 10.2% 15.3%, 0 0;
+  background-size: auto, cover;
 }
 
 .groups__wrapper {
@@ -91,9 +91,43 @@
 }
 
 @media (max-width: $tablet-full-width) {
+  .groups {
+    background-image: url("../img/star-icon.svg"),
+      url("../img/groups-tablet-bg.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 3.7% 8.8%, 0 0;
+    background-size: 39px 40px, contain;
+    padding-top: 101px;
+    padding-bottom: 110px;
+  }
+
   .groups__wrapper {
     padding-left: 5.86%;
     padding-right: 5.86%;
+  }
+
+  .groups__top {
+    margin-bottom: 44px;
+  }
+
+  .groups__top p {
+    width: 38.5%;
+    font-size: $font-size-tablet-s;
+  }
+
+  .groups__list-item {
+    width: 29.5%;
+    padding-top: 38px;
+  }
+
+  .groups h3 {
+    margin-bottom: 24px;
+  }
+
+  .groups__button {
+    margin-top: 21px;
+    margin-bottom: 42px;
+    padding: 13px 28px;
   }
 }
 

@@ -1,5 +1,4 @@
 .page-header {
-  max-width: $desktop-full-width;
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 36px;
@@ -28,7 +27,7 @@
 @media (max-width: $tablet-full-width) {
   .page-header {
     padding-top: 32px;
-    padding-bottom: 26px;
+    padding-bottom: 20px;
   }
 
   .page-header__wrapper {

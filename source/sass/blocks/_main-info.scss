@@ -1,6 +1,6 @@
 .main-info {
-  max-width: $desktop-full-width;
   margin: 0 auto;
+  position: relative;
   background-image: url("../img/car-icon.svg"),
     url("../../img/cloud-icon.svg"),
     url("../img/main-bg-desktop.png");
@@ -32,12 +32,22 @@
   font-weight: 500;
 }
 
+.main-info svg {
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+}
+
 .main-info p {
   margin: 0;
   padding: 0;
   width: 41%;
   line-height: 1.36;
   margin-bottom: 40px;
+}
+
+.main-info__tablet-mask {
+  display: none;
 }
 
 @media (max-width: $tablet-full-width) {
@@ -57,6 +67,14 @@
 
   .main-info p {
     width: 57%;
+  }
+
+  .main-info__desktop-mask {
+    display: none;
+  }
+
+  .main-info__tablet-mask {
+    display: block;
   }
 }
 

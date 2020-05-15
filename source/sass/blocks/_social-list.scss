@@ -1,6 +1,19 @@
 .social-list {
   margin: 0;
+  margin-top: 14px;
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  width: 102px;
+}
+
+.social-list__item a {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $main-background-color;
+  justify-content: center;
+  align-items: center;
 }
